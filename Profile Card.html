@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card របស់ខ្ញុំ</title>
+    <style>
+        /* កំណត់ Font និងផ្ទៃខាងក្រោយ */
+        body {
+            font-family: 'Khmer OS Battambang', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* ផ្ទាំង Card */
+        .card {
+            background: white;
+            width: 320px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* រូបភាព Cover */
+        .cover {
+            background: #764ba2;
+            height: 100px;
+        }
+
+        /* រូបថត Profile */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            background: #ddd;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: -50px;
+            object-fit: cover;
+        }
+
+        .info {
+            padding: 20px;
+        }
+
+        h2 { margin: 10px 0 5px; color: #333; }
+        p { color: #777; font-size: 14px; }
+
+        /* ប៊ូតុង Follow */
+        .btn-follow {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            border-radius: 25px;
+            margin: 20px 0;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-follow:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="cover"></div>
+        <img src="https://via.placeholder.com/100" alt="Profile" class="profile-img">
+        
+        <div class="info">
+            <h2>ឈ្មោះរបស់អ្នក</h2>
+            <p>Web Developer & Designer</p>
+            <p>ខ្ញុំចូលចិត្តរៀនកូដ និងបង្កើតអ្វីដែលថ្មីៗ។</p>
+            
+            <button class="btn-follow" onclick="followed()">Follow Me</button>
+        </div>
+    </div>
+
+    <script>
+        function followed() {
+            alert("អរគុណសម្រាប់ការ Follow! 🙏");
+        }
+    </script>
+
+</body>
+</html>
